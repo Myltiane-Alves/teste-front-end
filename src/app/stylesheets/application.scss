@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+div {
+  display: flex;
+}
+
+#main-page {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2vh 0;
+  flex-direction: column;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #000000;
+}
+
+span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #000000;
+  text-align: inherit;
+
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #000000;
+  text-align: inherit;
+}
+h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #000000;
+  text-align: inherit;
+}
+label{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #000000;
+  text-align: inherit;
+  
+}
+
+.btn {
+  background-color: #219653;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+
+.btn:hover {
+  transition: all 0.5s;
+  background-color: #219653e3;
+}
+
+.question-books {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .header {
+    justify-content: center;
+    padding: 40px 10px 20px 10px;
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      background-color: #D9D9D9;
+      color: blue;
+      border: solid 1px #D9D9D9;
+      border-radius: 3px;
+      height: 15px;
+      width: 15px;
+    }
+
+    input[type="checkbox"]:checked {
+      background-color: #fff;
+      color: red;
+
+    }
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .card {
+      flex-direction: column;
+      border: none;
+      border: 1px solid #e1e1e1;
+      width: 199px;
+      height: 150px;
+      padding: 10px;
+      margin: 10px;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      background-color: #fff;
+
+    }
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      padding-top: 40px;
+    }
+  }
+
+  .container-form {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    .header-form {
+      flex-direction: column;
+      padding: 10px 0px 10px 0px;
+      .title {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+
+    .content-form {
+      padding: 10px;
+
+      form {
+        flex-direction: column;
+        width: 100%;
+
+        .fields {
+          flex-direction: column;
+          padding-bottom: 20px;
+          width: 100%;
+
+          textarea {
+            height: 7.688rem;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #d9d9d9;
+            color: #000000;
+          }
+        }
+
+        .container-btn {
+          padding: 40px 0px 40px 0px;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  .content {
+
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    .container-form {
+      width: 80%;
+      .content-form {
+        .container-btn {
+          button {
+            width: 178px;
+          }
+        }
+      }
+    }
+  }
+}
+
+nav {
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    .logo {
+      text-align: center;
+      img {
+        align-items: center;
+        width: 50%;
+      }
+    }
+  }
+
+  hr {
+    height: 1px solid;
+    color: red;
+  }
+}
